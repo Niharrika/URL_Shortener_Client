@@ -9,3 +9,15 @@
     </div>
   </div>
 </form>
+<div class="row m-2">
+  <div class="col-lg-3" *ngFor="let i of urlData">
+    <div class="card bg-light mb-3" style="max-width: 18rem;">
+      <div class="card-body">
+        <h6 class="card-title">
+          Short URL:&nbsp;<a href="{{i.long}}">{{i.short}}</a>
+        </h6>
+        <p class="card-text">Original URL: {{i.long}}</p>
+      </div>
+    </div>
+  </div>
+</div>
