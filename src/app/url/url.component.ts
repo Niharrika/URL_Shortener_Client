@@ -24,6 +24,7 @@ export class UrlComponent implements OnInit {
   }
 
   sendData() {
+    console.log(this.userForm.value);
     this.posturl.postSer(this.userForm.value).subscribe((data2) => {
       alert("Done")
     })
