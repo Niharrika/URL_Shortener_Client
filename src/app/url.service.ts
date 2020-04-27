@@ -9,11 +9,10 @@ export class UrlService {
   userForm;
   constructor(private http : HttpClient) { }
   postSer(data): Observable<any> {
-    console.log("Hello")
+    console.log(data)
     return this.http.post('https://url-shortener-n.herokuapp.com/create', data)
   }
   getSer(): Observable<any> {
-    console.log("Hello")
     return this.http.get('https://url-shortener-n.herokuapp.com/list')
   }
 }

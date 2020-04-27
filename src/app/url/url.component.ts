@@ -20,7 +20,6 @@ export class UrlComponent implements OnInit {
   ngOnInit(): void {
     this.posturl.getSer().subscribe((data) => {
       this.urlData = data;
-      console.log(this.urlData);
     })
   }
 
